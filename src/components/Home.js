@@ -49,6 +49,7 @@ const Section = styled.section`
   align-items: center;
 
   min-height: 100vh;
+  padding: 20px 0;
   background-image: url(${background});
   background-size: cover;
 `;
