@@ -52,6 +52,7 @@ const Section = styled.section`
   padding: 20px 0;
   background-image: url(${background});
   background-size: cover;
+  box-sizing: border-box;
 `;
 
 const BabySection = styled.section`
@@ -66,6 +67,10 @@ const BabySection = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+
+  @media (max-width: 668px) {
+    width: 95%;
+  }
 `;
 
 const BabyInfo = styled.section`
