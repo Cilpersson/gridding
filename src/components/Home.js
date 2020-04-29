@@ -48,7 +48,7 @@ const Section = styled.section`
   justify-content: center;
   align-items: center;
 
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(${background});
   background-size: cover;
 `;
