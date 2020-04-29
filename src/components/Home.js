@@ -51,7 +51,7 @@ const Section = styled.section`
   min-height: 100vh;
   padding: 20px 0;
   background-image: url(${background});
-  background-size: cover;
+  background-size: contain;
 `;
 
 const BabySection = styled.section`
