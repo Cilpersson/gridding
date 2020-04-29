@@ -100,13 +100,13 @@ const Span = styled.span.attrs(({ ariaLabel }) => ({
   role: "img",
   "aria-label": ariaLabel,
 }))`
-  font-size: 2vw;
+  font-size: 2.5vw;
 `;
 
 const Point = styled.span.attrs(({ ariaLabel }) => ({
   role: "img",
   "aria-label": ariaLabel,
 }))`
-  font-size: 1.5vw;
+  font-size: 2vw;
   margin-right: 10px;
 `;
