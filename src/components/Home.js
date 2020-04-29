@@ -68,45 +68,65 @@ const BabySection = styled.section`
 `;
 
 const BabyInfo = styled.section`
-  max-width: 650px;
+  max-width: 750px;
   text-align: left;
 `;
 
 const Title = styled.h1`
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
-  font-size: 3vw;
+  font-size: 60px;
   color: #805333;
   text-align: center;
   margin: 0;
+
+  @media (max-width: 668px) {
+    font-size: 30px;
+  }
 `;
 
 const Text = styled.span`
   font-family: "Quicksand", sans-serif;
-  font-size: 1.5vw;
+  font-size: 30px;
   color: #543722;
+
+  @media (max-width: 668px) {
+    font-size: 20px;
+  }
 `;
 
 const SpanBack = styled.span.attrs(({ ariaLabel }) => ({
   role: "img",
   "aria-label": ariaLabel,
 }))`
-  font-size: 2vw;
+  font-size: 30px;
   transform: scaleX(-1);
   display: inline-block;
+
+  @media (max-width: 668px) {
+    font-size: 20px;
+  }
 `;
 
 const Span = styled.span.attrs(({ ariaLabel }) => ({
   role: "img",
   "aria-label": ariaLabel,
 }))`
-  font-size: 2.5vw;
+  font-size: 30px;
+
+  @media (max-width: 668px) {
+    font-size: 20px;
+  }
 `;
 
 const Point = styled.span.attrs(({ ariaLabel }) => ({
   role: "img",
   "aria-label": ariaLabel,
 }))`
-  font-size: 2vw;
+  font-size: 30px;
   margin-right: 10px;
+
+  @media (max-width: 668px) {
+    font-size: 20px;
+  }
 `;
