@@ -1,0 +1,112 @@
+import React from "react";
+import styled from "styled-components";
+import moment from "moment";
+import background from "./pattern.svg";
+import Lottie from "lottie-react-web";
+import animation from "./newborn.json";
+
+export const Home = () => {
+  return (
+    <Section>
+      <BabySection>
+        <Title>Ingrid Ellen Carina Stjernholm</Title>
+        <br />
+        <Lottie
+          options={{
+            animationData: animation,
+          }}
+          height="150px"
+          width="150px"
+        />
+        <br />
+        <BabyInfo>
+          <Text>
+            <Point ariaLabel="baby">👶🏼 </Point>Born on the 30th of December 2019
+            at 12:14pm, that's about {moment("20191230", "YYYYMMDD").fromNow()}{" "}
+            <Span ariaLabel="watch">⏰</Span>
+          </Text>
+          <br />
+          <br />
+          <Text>
+            <Point ariaLabel="baby">👶🏼 </Point>She was 51cm from her head to her
+            toes and weighed 3404 grams <Span ariaLabel="ruler">📏</Span>
+          </Text>
+          <br />
+          <br />
+          <Text>
+            <Point ariaLabel="baby">👶🏼 </Point>The first thing she ate was a
+            tiny piece of <SpanBack ariaLabel="banana">🍌</SpanBack>
+          </Text>
+        </BabyInfo>
+      </BabySection>
+    </Section>
+  );
+};
+
+const Section = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  background-image: url(${background});
+`;
+
+const BabySection = styled.section`
+  width: 50vw;
+  height: 75vh;
+  padding: 45px 15px 25px;
+  background: #f2f7ff;
+  border: 8px solid #fb7b77;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+`;
+
+const BabyInfo = styled.section`
+  max-width: 650px;
+  text-align: left;
+`;
+
+const Title = styled.h1`
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 3vw;
+  color: #805333;
+  text-align: center;
+  margin: 0;
+`;
+
+const Text = styled.span`
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5vw;
+  color: #543722;
+`;
+
+const SpanBack = styled.span.attrs(({ ariaLabel }) => ({
+  role: "img",
+  "aria-label": ariaLabel,
+}))`
+  font-size: 2vw;
+  transform: scaleX(-1);
+  display: inline-block;
+`;
+
+const Span = styled.span.attrs(({ ariaLabel }) => ({
+  role: "img",
+  "aria-label": ariaLabel,
+}))`
+  font-size: 2vw;
+`;
+
+const Point = styled.span.attrs(({ ariaLabel }) => ({
+  role: "img",
+  "aria-label": ariaLabel,
+}))`
+  font-size: 1.5vw;
+  margin-right: 10px;
+`;
