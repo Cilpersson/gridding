@@ -50,6 +50,7 @@ const Section = styled.section`
 
   height: 100vh;
   background-image: url(${background});
+  background-size: cover;
 `;
 
 const BabySection = styled.section`
