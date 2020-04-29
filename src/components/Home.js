@@ -53,8 +53,7 @@ const Section = styled.section`
 `;
 
 const BabySection = styled.section`
-  width: 50vw;
-  height: 75vh;
+  width: 75vw;
   padding: 45px 15px 25px;
   background: #f2f7ff;
   border: 8px solid #fb7b77;
